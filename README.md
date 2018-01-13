@@ -16,3 +16,21 @@ We use split-key proxy re-encryption scheme. The reference implementation in its
 Please checke the [tutorial](https://blog.nucypher.com/proxy-re-encryption-playground-in-python-3bc66170b9bf) in order to set up the environment and play with re-encryption.
 
 We need client libraries for the following languages: Go, Rust, C. If you wish to play with low-level cryptography in any of these languages (or even different ones if you like) - feel free to hack on this task.
+
+## UI for mining node management console
+
+Our mining nodes will be the workhorses of the network.
+They stake the token and, isntead of confirming transactions, they re-encrypt ciphertexts.
+Mining works in the follwing manner:
+
+* Miner deposits the token (should be no less than minimum amount);
+* Miner locks the tokens for a specified time T (T >= 1 month);
+* Mining is happening, and the miner re-encrypts during this time;
+* Miner can chose to either reinvest block rewards back into mining; or to take profits; or to start gradual spindown of the node in the time T.
+
+We also would need to have a visual graph so that the miner can compare how much tokens he gets over time if chosing different options.
+
+The UI should be a web UI.
+Could be built using any web tool (Python frameworks, nodejs frameworks, or whatever you love).
+
+## UI for granting permissions
