@@ -34,3 +34,9 @@ The UI should be a web UI.
 Could be built using any web tool (Python frameworks, nodejs frameworks, or whatever you love).
 
 ## UI for granting permissions
+
+The purpose of NuCypher is key management / access management as a service.
+It can grant permissions to different people (which means, different public keys + ethereum addresses) permanently, or for some time, or with an on-pay condition.
+The permissions should be able to be revoked at any time.
+This can be a web UI or a cross-platform desktop app.
+Use your favourite web framework, Qt, Electron, or anything you think is appropriate.
