@@ -24,9 +24,9 @@ They stake their tokens and, rather than confirming transactions, they re-encryp
 
 Mining works in the following way:
 
-* Miner deposits the token (always greater than a specified minimum amount);
+* Miner deposits the token (no less than a specified minimum amount);
 * Miner locks the tokens for a specified time T (T >= 1 month);
-* Mining occurs.The miner performs the re-encryption task(s) during this time;
+* Mining occurs. The miner performs the re-encryption task(s) during this period;
 * The Miner now has three options – he/she can chose to reinvest block rewards back into mining, take the profits, or to commence a gradual spindown of the node in the time T.
 
 We would love to see visualisations/graphs so that the miner might learn how many tokens he/she could potentially earn with each option over time. 
