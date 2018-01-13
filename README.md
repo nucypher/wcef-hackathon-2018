@@ -40,3 +40,13 @@ It can grant permissions to different people (which means, different public keys
 The permissions should be able to be revoked at any time.
 This can be a web UI or a cross-platform desktop app.
 Use your favourite web framework, Qt, Electron, or anything you think is appropriate.
+
+
+## Public keys/certificates for TLS tied to Ethereum address
+
+Our nodes have to establish TLS connections.
+But instead of using DNS, we want to tie the certificates to the Ethereum addresses.
+The idea is that the certificate (or its hash) is signed and stored on Ethereum blockchain, and for the sake of TLS it's self-signed.
+When the connection is being established, the client should read the Ethereum address info (stored in cert metadata?), check if this certificate is signed by the owner of that address, and if it is the case, the connection is established, or otherwise failed.
+
+The code needs to be written in Python.
