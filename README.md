@@ -1,6 +1,8 @@
 # wcef-hackathon-2018
 Guidelines for hackathon at WCEF 2018. To qualify for a prize, your submission should be released under a permissive open source license (e.g. Apache, MIT, etc.).
 
+Please join our Slack [group](https://nucypher-kms-slack.herokuapp.com/) and head to the dedicated *wcef-hackathon* channel to get help from NC developers. 
+
 # Background info about NuCypher
 
 NuCypher is a key management system which leverages proxy re-encryption to control access over encrypted data.
