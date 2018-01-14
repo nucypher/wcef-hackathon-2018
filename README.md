@@ -16,7 +16,13 @@ Slides from the workshop are available [here](https://github.com/nucypher/wcef-h
 
 ## Implementing proxy re-encryption library in languages other than Python or Javascript
 
-We use a split-key proxy re-encryption scheme. The reference implementation in its most readable, self-explaining form can be found [here](https://github.com/nucypher/nucypher-pre-python/blob/master/npre/umbral.py). In brief, encryption and decryption is effectively [ECIES](https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme), but the ciphertext (or, more accurately, the ephemeral public key) can be transformed so that the data can be shared with more than one recepient via re-encryption.
+NuCypher uses a split-key proxy re-encryption scheme.
+
+We treat [this module](https://github.com/nucypher/nucypher-pre-python/blob/master/npre/umbral.py) as a reference implementation - for the moment, it's our most readable, self-explaining implementation.
+
+We are also working on a [higher-level implementation that we simply call pyUmbral](https://github.com/nucypher/pyUmbral).  Our flagship product is our KMS, which we will launch in the spring of 2018.  That too is open source, [available here](https://github.com/nucypher/nucypher-kms).
+
+In brief, encryption and decryption is effectively [ECIES](https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme), but the ciphertext (or, more accurately, the ephemeral public key) can be transformed so that the data can be shared with more than one recepient via re-encryption.
 
 Please check out the [tutorial](https://blog.nucypher.com/proxy-re-encryption-playground-in-python-3bc66170b9bf) in order to set up the environment and play with re-encryption.
 
